@@ -18,25 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDB-or-q0L">
-                                <rect key="frame" x="96" y="563" width="222" height="148"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="222" id="IyB-DV-LKL"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="222" id="Nig-pp-Kpq"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="148" id="ORS-sZ-W0S"/>
-                                    <constraint firstAttribute="height" constant="148" id="XaJ-dg-Gcw"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvb-6O-pGJ">
+                                <rect key="frame" x="156" y="497" width="102" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeTextinLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gX6-t3-81N"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJS-zf-66Q">
+                                <rect key="frame" x="156" y="234" width="102" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="bDB-or-q0L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3TS-O2-he5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bDB-or-q0L" secondAttribute="bottom" constant="151" id="bEZ-0v-aJ1"/>
-                            <constraint firstItem="bDB-or-q0L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="519" id="xTc-hS-Z95"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="Nvb-6O-pGJ" id="xqK-6h-qFU"/>
+                        <outlet property="label" destination="DJS-zf-66Q" id="EjY-Tf-ZPI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
